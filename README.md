@@ -8,5 +8,5 @@
 ```
   proximiio.setIDandAuthToken("YOUR_APP_KEY", "YOUR_AUTH_TOKEN", null, null);
 ```
-
-3. use "ionic run android --device" or "ionic run ios --device" to run the application on device.
+3. run npm install to install the required dependencies
+4. use "ionic run android --device" or "ionic run ios --device" to run the application on device.
