@@ -22,12 +22,16 @@ package com.ionicframework.ioapp463314;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
+import io.fabric.sdk.android.Fabric;
+import com.crashlytics.android.Crashlytics;
+
 public class MainActivity extends CordovaActivity
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
     }
